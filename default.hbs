@@ -17,11 +17,9 @@
 
         <ul id="tags__ul">
           <li id="js-label1" class="tags__li tags-btn active">All Posts</li>
-          <li id="js-label2" class="tags__li tags-btn">place_your_tag_display_name_here</li>
-          <li id="js-label3" class="tags__li tags-btn">place_your_tag_display_name_here</li>
-          <li id="js-label4" class="tags__li tags-btn">place_your_tag_display_name_here</li>
-          <li id="js-label5" class="tags__li tags-btn">place_your_tag_display_name_here</li>
-          <li id="js-label6" class="tags__li tags-btn">place_your_tag_display_name_here</li>
+          <li id="js-label2" class="tags__li tags-btn">Computer</li>
+          <li id="js-label3" class="tags__li tags-btn">Life</li>
+          <li id="js-label4" class="tags__li tags-btn">Thoughts</li>
         </ul>
 
         <div id="tags__bottom">
@@ -39,7 +37,11 @@
 
         <nav id="pl__container">
         {{#foreach posts}}
-          <a class="{{tags}} pl__all" href="{{url}}"><span class="pl__circle"></span><span class="pl__title">{{title}}</span><span class="pl__date">{{date format='MMM YY'}}</span></a>
+          <a class="{{tags autolink="false"}} pl__all" href="{{url}}">
+            <span class="pl__circle"></span>
+            <span class="pl__title">{{title}}</span>
+            <span class="pl__date">{{date format='MMM YY'}}</span>
+          </a>
         {{/foreach}}
         </nav>
       </div> <!-- end #posts-list -->
@@ -64,6 +66,6 @@
     <script src="/assets/js/jquery.pjax.js"></script>
     <script src="/assets/js/nprogress.js"></script>
     <script src="/assets/js/prism.js"></script>
-    <script src="/assets/js/script.js"></script>
+    <script src="{{asset "js/script.js"}}"></script>
   </body>
 </html>

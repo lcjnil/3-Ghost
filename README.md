@@ -4,6 +4,8 @@ DEMO: [http://peiwen.lu](http://peiwen.lu)
 
 欢迎任何改进建议，请直接[提交 issues](https://github.com/P233/3-Ghost/issues/new)，感谢。
 
+Forked: [3-Ghost](https://github.com/P233/3-Ghost/issues/new)
+
 ## 主要功能
 
 * 不支持 IE9 及以下浏览器。

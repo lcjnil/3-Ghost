@@ -25,11 +25,10 @@ function postsListReady() {
 
 // Variables
     tag1       = $('.pl__all'),
-    tag2       = $('.place_your_tag_name_here'),
-    tag3       = $('.place_your_tag_name_here'),
-    tag4       = $('.place_your_tag_name_here'),
-    tag5       = $('.place_your_tag_name_here'),
-    tag6       = $('.place_your_tag_name_here');
+    tag2       = $('.Computer'),
+    tag3       = $('.Life'),
+    tag4       = $('.Thoughts');
+
 var sidebar    = $('#sidebar'),
     container  = $('#post'),
     content    = $('#pjax'),
@@ -43,7 +42,7 @@ var clickHandler = function(k) {
     window['tag'+k].delay(50).fadeIn(350);
   }
 };
-for (var i = 1; i <= 6; i++) {
+for (var i = 1; i <= 4; i++) {
   $('#js-label' + i).on('click', clickHandler(i));
 }
 
