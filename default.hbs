@@ -13,8 +13,11 @@
   <body>
     <aside id="sidebar">
       <nav id="tags">
-        <a href="{{@blog.url}}" id="avatar"></a>
-
+        <a href="{{@blog.url}}" id="avatar">
+          <!--Added ghost's blog.logo support-->
+          <img src="{{@blog.logo}}"/>
+        </a>
+        <p class="blog_title" alt="rtet">{{@blog.title}}</p>
         <ul id="tags__ul">
           <li id="js-label1" class="tags__li tags-btn active">All Posts</li>
           <li id="js-label2" class="tags__li tags-btn">Computer</li>

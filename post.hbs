@@ -3,12 +3,14 @@
 {{#post}}
 <article id="post__content">
   <h1 id="post__title" data-identifier="{{date format='YYYYMMDD'}}">{{title}}</h1>
+  <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
   {{content}}
 </article> <!-- end #post__content -->
 
 <div id="post__share">
   <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
 </div> <!-- end #post__share -->
+
 
 <div id="disqus_thread">
   <!-- 多说评论框 start -->
@@ -30,4 +32,7 @@
 </div> <!-- end #disqus_thread -->
 {{/post}}
 
-<p id="copyright">Powered by <a href="https://ghost.org" target="_blank">Ghost</a>&nbsp;&nbsp;|&nbsp;&nbsp;Theme <a href="https://github.com/P233/3-Ghost" target="_blank">3-Ghost</a></p>
+<div id="copyright">
+  <p>{{@blog.description}}</p>
+  <p>Powered by <a href="https://ghost.org" target="_blank">Ghost</a>&nbsp;&nbsp;|&nbsp;&nbsp;Theme <a href="https://github.com/lcjnil/3-Ghost" target="_blank">3-Ghost</a></p>
+</div>
